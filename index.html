@@ -1,0 +1,552 @@
+<!--Made By: Krisha Botadara-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChainTech Network</title>
+    <!--Webpage Title-->
+    <link
+      rel="shortcut icon"
+      href="./images/section-logo.png"
+      type="image/x-icon"
+    />
+    <!--Webpage Logo/Favicon-->
+    <link rel="stylesheet" href="style.css" />
+    <!--Link to CSS styles-->
+    <!--Link to Bootstrap CSS-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!--HEADER SECTION-->
+    <header class="d-flex justify-content-between align-items-center">
+      <!--Flex container layout-->
+      <!--Navbar for large screen-->
+      <nav>
+        <img src="./images/logo.jpg" alt="logo" class="img-responsive" />
+        <a href="#" class="active">Company</a>
+        <a href="#">Services</a>
+        <a href="#">Business Models</a>
+        <a href="#">Blogs</a>
+        <a href="#">Contact Us</a>
+
+        <!--For small screen sizes the modal is triggered to create responsive navbar-->
+        <!-- Menu icon to trigger the modal -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          fill="currentColor"
+          class="bi bi-list"
+          viewBox="0 0 16 16"
+          id="menu"
+          onclick="openModal()"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+          />
+        </svg>
+      </nav>
+    </header>
+
+    <!--Navbar modal triggered for small screen sizes-->
+    <div id="myModal" class="modal">
+      <div class="modal-body">
+        <ul class="list-group list-group-flush">
+          <!-- Aligns the navbar menus vertically -->
+          <a href="#" class="active" id="vertical-navbar-company">Company</a>
+          <a href="#" id="vertical-navbar-services">Services</a>
+          <a href="#" id="vertical-navbar-models">Business Models</a>
+          <a href="#" id="vertical-navbar-blogs">Blogs</a>
+          <a href="#" id="vertical-navbar-contact">Contact Us</a>
+        </ul>
+        <span class="close" onclick="closeModal()">&times;</span
+        ><!-- Close button to close the modal -->
+      </div>
+    </div>
+
+    <!-- Main Welcome Text -->
+    <header>
+      <!-- Bootstrap class to center align text -->
+      <h1 class="text-center" id="main-text">WELCOME</h1>
+      <h1 class="text-center" id="main-text">
+        TO <span id="gradient-text">CHAINTECH</span>
+        <!-- Applied linear gradient color to the text -->
+      </h1>
+      <p class="text-center" id="sub-text">
+        From square one to engineering excellence! PixelPlex assists in
+        full-cycle software development, jumps in to take it over, or brings
+        dedicated top-demanded skills.
+      </p>
+
+      <!-- Bootstrap class to align items at center -->
+      <div class="row justify-content-center">
+        <div class="col-auto">
+          <button class="rounded-pill">
+            <!--Bootstrap class to create rounded button-->
+            Get Started
+            <!--Next arrow-->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="36"
+              height="36"
+              fill="currentColor"
+              class="bi bi-arrow-right-circle-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!--MIDDLE SECTION-->
+    <div class="container">
+      <!--Bootstrap class to align items at center-->
+      <div class="row justify-content-center">
+        <div class="col">
+          <section>
+            <h2 class="text-left" id="section-main">Services We Offer</h2>
+            <!--Bootstrap class to align text at left-->
+
+            <div style="display: flex">
+              <p class="text-left" id="section-text">
+                Discover the digital possibilities for your brand with our
+                comprehensive suite of services.
+              </p>
+
+              <!--Next arrow icons-->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-arrow-left"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"
+                />
+              </svg>
+
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                fill="currentColor"
+                class="bi bi-arrow-right-circle"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"
+                />
+              </svg>
+            </div>
+
+            <!--First row of cards/blocks-->
+            <div style="display: flex" id="card-items">
+              <!--Display flex is used to display cards/blocks in 1 line/row-->
+              <!--Container-1 refers to the first block/card from the first row-->
+              <div class="container" id="container-1">
+                <div class="row justify-content-center">
+                  <!--Container-1 is divided into 3 parts: Header, Body, and Footer-->
+
+                  <div class="header">
+                    <!--Header part of container-1-->
+                    <img
+                      src="./images/section-logo.png"
+                      alt=""
+                      class="section-logo"
+                    />
+                    <h3 id="head">Join Development</h3>
+                  </div>
+                  <hr class="hr" />
+                  <!--Creates horizontal line to divide each part-->
+
+                  <div class="body">
+                    <!--Body part of container-1-->
+                    <h3 id="body-text">Blockchain Development</h3>
+                    <img
+                      src="./images/section-1.png"
+                      alt=""
+                      class="section-img"
+                    />
+                  </div>
+                  <hr class="hr" />
+                  <!--Creates horizontal line to divide each part-->
+
+                  <div class="footer">
+                    <!--Footer part of container-1-->
+                    <!--Bootstrap class: rounded-pill to create rounded button-->
+                    <button class="rounded-pill" id="section-button">
+                      Explore
+                      <img
+                        src="./images/gradient-arrow.png"
+                        alt=""
+                        class="gradient-arrow"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!--Container-2 refers to the second block/card from the first row-->
+              <div class="container" id="container-2">
+                <div class="row justify-content-center">
+                  <!--Container-2 is divided into 3 parts: Header, Body, and Footer-->
+
+                  <div class="header">
+                    <!--Header part of container-2-->
+                    <img
+                      src="./images/section-logo.png"
+                      alt=""
+                      class="section-logo"
+                    />
+                    <h3 id="head">Join Development</h3>
+                  </div>
+                  <hr class="hr" />
+                  <!--Creates horizontal line to divide each part-->
+
+                  <div class="body">
+                    <!--Body part of container-2-->
+                    <h3 id="body-text">Blockchain Development</h3>
+                    <img
+                      src="./images/section-2.png"
+                      alt=""
+                      class="section-img"
+                    />
+                  </div>
+                  <hr class="hr" />
+                  <!--Creates horizontal line to divide each part-->
+
+                  <div class="footer">
+                    <!--Footer part of container-2-->
+                    <!--Bootstrap class: rounded-pill to create rounded button-->
+                    <button
+                      class="rounded-pill"
+                      id="section-button"
+                      style="background-color: #030303; color: white"
+                    >
+                      Explore
+                      <img
+                        src="./images/gradient-arrow.png"
+                        alt=""
+                        class="gradient-arrow"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!--Container-3 refers to the third block/card from the first row-->
+              <div class="container" id="container-3">
+                <div class="row justify-content-center">
+                  <!--Container-3 is divided into 3 parts: Header, Body, and Footer-->
+
+                  <div class="header">
+                    <!--Header part of container-3-->
+                    <img
+                      src="./images/section-logo.png"
+                      alt=""
+                      class="section-logo"
+                    />
+                    <h3 id="head">Join Development</h3>
+                  </div>
+                  <hr class="hr" />
+                  <!--Creates horizontal line to divide each part-->
+
+                  <div class="body">
+                    <!--Body part of container-3-->
+                    <h3 id="body-text">Security AAS</h3>
+                    <img
+                      src="./images/section-3.png"
+                      alt=""
+                      class="section-img"
+                    />
+                  </div>
+                  <hr class="hr" />
+                  <!--Creates horizontal line to divide each part-->
+
+                  <div class="footer">
+                    <!--Footer part of container-3-->
+                    <!--Bootstrap class: rounded-pill to create rounded button-->
+                    <button class="rounded-pill" id="section-button">
+                      Explore
+                      <img
+                        src="./images/gradient-arrow.png"
+                        alt=""
+                        class="gradient-arrow"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!--Container-4 refers to the fourth block/card from the first row-->
+              <div class="container" id="container-4">
+                <div class="row justify-content-center">
+                  <!--Container-4 is divided into 3 parts: Header, Body, and Footer-->
+
+                  <div class="header">
+                    <!--Header part of container-4-->
+                    <img
+                      src="./images/section-logo.png"
+                      alt=""
+                      class="section-logo"
+                    />
+                    <h3 id="head">Join Development</h3>
+                  </div>
+                  <hr class="hr" />
+                  <!--Creates horizontal line to divide each part-->
+
+                  <div class="body">
+                    <!--Body part of container-4-->
+                    <h3 id="body-text">Motion Graphic</h3>
+                    <img
+                      src="./images/section-4.png"
+                      alt=""
+                      class="section-img"
+                    />
+                  </div>
+                  <hr class="hr" />
+                  <!--Creates horizontal line to divide each part-->
+
+                  <div class="footer">
+                    <!--Footer part of container-4-->
+                    <!--Bootstrap class: rounded-pill to create rounded button-->
+                    <button class="rounded-pill" id="section-button">
+                      Explore
+                      <img
+                        src="./images/gradient-arrow.png"
+                        alt=""
+                        class="gradient-arrow"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <!--Second row of the cards/blocks-->
+    <div class="container" id="section-2">
+      <div class="row justify-content-center">
+        <div class="col">
+          <section>
+            <div style="display: flex">
+              <!--Display flex is used to display cards/blocks in 1 line/row-->
+              <!--Container-1 refers to the first block/card from the second row-->
+              <div class="container" id="container-1">
+                <div class="row justify-content-center">
+                  <!--Container-1 is divided into 3 parts: Header, Body, and Footer-->
+
+                  <div class="header">
+                    <!--Header part of container-1-->
+                    <img
+                      src="./images/section-logo.png"
+                      alt=""
+                      class="section-logo"
+                    />
+                    <h3 id="head">Join Development</h3>
+                  </div>
+                  <hr class="hr" />
+                  <!--Creates horizontal line to divide each part-->
+
+                  <div class="body">
+                    <!--Body part of container-1-->
+                    <h3 id="body-text">Blockchain Development</h3>
+                    <img
+                      src="./images/section-1.png"
+                      alt=""
+                      class="section-img"
+                    />
+                  </div>
+                  <hr class="hr" />
+                  <!--Creates horizontal line to divide each part-->
+
+                  <div class="footer">
+                    <!--Footer part of container-1-->
+                    <!--Bootstrap class: rounded-pill to create rounded button-->
+                    <button class="rounded-pill" id="section-button">
+                      Explore
+                      <img
+                        src="./images/gradient-arrow.png"
+                        alt=""
+                        class="gradient-arrow"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!--Container-2 refers to the second block/card from the second row-->
+              <div class="container" id="container-2">
+                <div class="row justify-content-center">
+                  <!--Container-2 is divided into 3 parts: Header, Body, and Footer-->
+
+                  <div class="header">
+                    <!--Header part of container-2-->
+                    <img
+                      src="./images/section-logo.png"
+                      alt=""
+                      class="section-logo"
+                    />
+                    <h3 id="head">Join Development</h3>
+                  </div>
+                  <hr class="hr" />
+                  <!--Creates horizontal line to divide each part-->
+
+                  <div class="body">
+                    <!--Body part of container-2-->
+                    <h3 id="body-text">Blockchain Development</h3>
+                    <img
+                      src="./images/section-2.png"
+                      alt=""
+                      class="section-img"
+                    />
+                  </div>
+                  <hr class="hr" />
+                  <!--Creates horizontal line to divide each part-->
+
+                  <div class="footer">
+                    <!--Footer part of container-2-->
+                    <!--Bootstrap class: rounded-pill to create rounded button-->
+                    <button class="rounded-pill" id="section-button">
+                      Explore
+                      <img
+                        src="./images/gradient-arrow.png"
+                        alt=""
+                        class="gradient-arrow"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!--Container-3 refers to the third block/card from the second row-->
+              <div class="container" id="container-3">
+                <div class="row justify-content-center">
+                  <!--Container-3 is divided into 3 parts: Header, Body, and Footer-->
+
+                  <div class="header">
+                    <!--Header part of container-3-->
+                    <img
+                      src="./images/section-logo.png"
+                      alt=""
+                      class="section-logo"
+                    />
+                    <h3 id="head">Join Development</h3>
+                  </div>
+                  <hr class="hr" />
+                  <!--Creates horizontal line to divide each part-->
+
+                  <div class="body">
+                    <!--Body part of container-3-->
+                    <h3 id="body-text">Security AAS</h3>
+                    <img
+                      src="./images/section-3.png"
+                      alt=""
+                      class="section-img"
+                    />
+                  </div>
+                  <hr class="hr" />
+                  <!--Creates horizontal line to divide each part-->
+
+                  <div class="footer">
+                    <!--Footer part of container-3-->
+                    <!--Bootstrap class: rounded-pill to create rounded button-->
+                    <button class="rounded-pill" id="section-button">
+                      Explore
+                      <img
+                        src="./images/gradient-arrow.png"
+                        alt=""
+                        class="gradient-arrow"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!--Container-4 refers to the fourth block/card from the second row-->
+              <div class="container" id="container-4">
+                <div class="row justify-content-center">
+                  <!--Container-4 is divided into 3 parts: Header, Body, and Footer-->
+
+                  <div class="header">
+                    <!--Header part of container-4-->
+                    <img
+                      src="./images/section-logo.png"
+                      alt=""
+                      class="section-logo"
+                    />
+                    <h3 id="head">Join Development</h3>
+                  </div>
+                  <hr class="hr" />
+                  <!--Creates horizontal line to divide each part-->
+
+                  <div class="body">
+                    <!--Body part of container-4-->
+                    <h3 id="body-text">Motion Graphic</h3>
+                    <img
+                      src="./images/section-4.png"
+                      alt=""
+                      class="section-img"
+                    />
+                  </div>
+                  <hr class="hr" />
+                  <!--Creates horizontal line to divide each part-->
+
+                  <div class="footer">
+                    <!--Footer part of container-4-->
+                    <!--Bootstrap class: rounded-pill to create rounded button-->
+                    <button class="rounded-pill" id="section-button">
+                      Explore
+                      <img
+                        src="./images/gradient-arrow.png"
+                        alt=""
+                        class="gradient-arrow"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <!--FOOTER SECTION-->
+    <footer>
+      <img src="./images/logo.jpg" alt="logo" class="img-fluid" />
+      <p class="text-center" id="copyright">
+        © 2024 All Rights Reserved - Chaintech Network
+      </p>
+    </footer>
+
+    <!-- Link to Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="javascript.js"></script>
+    <!--Link to JavaScript file-->
+  </body>
+</html>

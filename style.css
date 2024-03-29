@@ -1,0 +1,373 @@
+/*Made By: Krisha Botadara*/
+
+/*Custom Fonts included using @font-face*/
+@font-face{
+    font-family: 'CustomFont1';
+    src: url('./Poppins_Font_Family/Poppins-SemiBold.ttf');
+}
+@font-face{
+    font-family: 'CustomFont2';
+    src: url('./Poppins_Font_Family/Poppins-Black.ttf');
+}
+@font-face{
+    font-family: 'CustomFont3';
+    src: url('./Poppins_Font_Family/Poppins-ExtraBold.ttf');
+}
+@font-face{
+    font-family: 'CustomFont4';
+    src: url('./Poppins_Font_Family/Poppins-Medium.ttf');
+}
+
+/*CSS Styles for the Header*/
+/*Navbar Section*/
+h1{
+    font-family: CustomFont2;
+}
+
+nav{
+    display: inline-flex; /*Display navbar menus for large screens in single row*/
+    font-family: CustomFont1;
+    margin: 1.5%;
+}
+
+header{ 
+    background-color: #030303;
+    color: white;
+    padding: 1% 7%;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    margin-right: 5%;
+    justify-content: center;
+    text-align: center;
+    margin-top: 1.5%;
+    text-wrap: nowrap;
+}
+
+#menu{
+    position: absolute;
+    top: 5%;
+    right: 4%;
+    display: none;
+}
+
+/*Grouping similiar styles together*/
+nav a:hover,.active,#menu,#vertical-navbar-company:hover, #vertical-navbar-services:hover, #vertical-navbar-models:hover, 
+#vertical-navbar-blogs:hover, #vertical-navbar-contact:hover{
+    color: #00FFA7;
+}
+
+.img-responsive{
+    width: 15%;
+    margin-left: 5%;
+    margin-right: 20%;
+}
+
+/* CSS Styles for the Welcome Section*/
+#main-text{
+    font-size: 7rem;
+    font-family: CustomFont2;
+}
+
+#gradient-text{ /*Applies linear gradient to the text*/
+    background: linear-gradient(to right, #FFFF00,#00FFA7);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+#sub-text{
+    font-size: 1.5rem;
+    font-family: CustomFont4;
+}
+
+.rounded-pill {
+    border-radius: 0.8em; /* CSS for rounded buttons */
+    padding: 0.5vw 1vw; 
+    background-color: white; 
+    color: black; 
+    border: none; 
+    font-family: CustomFont1;
+}
+
+.rounded-pill:hover{
+    background-color: black;
+    color: white;
+    border: 0.1vw solid white;
+    align-items: center;
+    justify-content: center;
+}
+
+.bi-arrow-right-circle-fill{
+    padding-left: 5%;
+}
+
+/* Modal styles */
+/*Responsive Navbar for small screen sizes*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    right: 0;
+    top: 0;
+    width: 40%;
+    height: 100%;
+    overflow: visible;
+    background-color: rgba(0, 0, 0, 0.5); /* Black with opacity */
+  }
+  
+  .modal-body {
+    margin: 10% 10% 0% 65%;
+    border: 1px solid #00FFA7;
+    width: 35%;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .modal-body a{
+    color: white;
+    text-decoration: none;
+    padding-bottom: 5%;
+  }
+  
+  .list-group{
+    font-size: 1.2em;
+    font-family: CustomFont1;
+    text-wrap: nowrap;
+  }
+  .close {
+    color: #aaa;
+    position: absolute;
+    top: 0%;
+    right: 10%;
+    font-size: 2em;
+    font-family: CustomFont1;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #00FFA7;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+/*Section Styles*/
+/*Middle Section*/
+section{
+    margin: 3% 0%;
+    overflow: hidden;
+}
+
+.text-left{
+    font-family: CustomFont1;
+    color: black;
+}
+
+#section-main{
+    font-size: 2.5em;
+}
+
+#section-text{
+    font-size: 1rem;
+    text-wrap: nowrap;
+    color: black;
+}
+
+.bi-arrow-left{
+    margin: 0.5% 2% 0% 27%;
+}
+
+#container-1,#container-2,#container-3,#container-4{ /*Applying styles to the cards/blocks*/
+    border-radius: 1.5em;
+    border: 0.3vw solid black;
+    width: 23%;
+    max-height: 40%;
+    padding: 1%;
+    margin: 1%; 
+}
+
+#section-2{
+    margin-top: -5%;
+    margin-left: 4.5%;
+}
+
+#container-1{
+    background-color: #b7f6d3;
+}
+
+#container-2{
+    background-color: #bdf2f6;
+
+}
+
+#img{
+    width: 83%;
+    margin-left: 10%;
+}
+
+#container-3{
+    background-color: #ffcece;
+}
+
+#container-4{
+    background-color: #ccd2f8;
+}
+
+.section-logo{
+    width: 20%;
+    height: 80%;
+}
+
+.hr{ /*Creates horizontal line*/
+    border: 0.2vw solid black;
+    width: 110%;
+}
+
+.header{
+    font-family: CustomFont1;
+    display: flex;
+    text-align: center;
+    justify-content: left;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+}
+
+#head{
+    font-family: CustomFont1;
+    color: black;
+    font-size: 0.9rem;
+    padding-top: 5%;
+    margin-left: 3%;
+}
+
+#body-text{
+    font-family: CustomFont1;
+    text-align: center;
+    justify-content: center;
+}
+
+.section-img{
+    width: 90%;
+    margin: 0% 5%;
+}
+
+.footer{
+    margin-left: 80%;
+}
+
+#section-button{
+    border: 0.3vw solid black;
+    height: 8vh;
+    width: 10vw;
+}
+
+/*Footer CSS Styles*/
+footer{
+    background-color: #030303;
+    padding: 1%;
+}
+#copyright{
+    font-family: CustomFont4;
+    font-size: 0.7rem;
+    color: #98A6AC;
+}
+.img-fluid{
+    width: 15%;
+    margin-left: 43%;
+}
+
+
+/*Responsive Design using media queries*/
+
+@media screen and (min-width: 1000px){ /*Minimum screen width is 1000px*/
+    .modal-body{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px){ /*Maximum screen width is 900px*/
+    #body-text{
+        font-size: 1rem;
+    } 
+}
+
+@media screen and (max-width: 850px){ /*Maximum screen width is 850px*/
+    #body-text{
+        font-size: 1rem;
+    } 
+}
+
+@media screen and (max-width: 1200px){ /*Maximum screen width is 1200px*/
+    .footer{
+        display: none;
+    }
+    .header{
+       display: none;
+    }
+    .hr{
+        display: none; 
+    }
+}
+
+@media screen and (max-width: 1000px) { /*Maximum screen width is 1000px*/
+    #menu{
+        display: block;
+        cursor: pointer;
+    }
+    nav a{
+        display: none;
+    }
+    .img-responsive{
+        width: 25%;
+    }
+    #main-text{
+        font-size: 5rem;
+    }
+    #body-text{
+        font-size: 0.9rem;
+    } 
+    
+}
+
+@media screen and (max-width: 700px) { /*Maximum screen width is 700px*/
+    .img-responsive{
+        width: 35%;
+    }
+    #main-text{
+        font-size: 4rem;
+    }
+    #sub-text{
+        font-size: 1rem;
+    }
+    #body-text{
+        font-size: 0.8rem;
+    }
+
+}
+
+@media screen and (max-width: 500px) { /*Maximum screen width is 500px*/
+    .img-responsive{
+        width: 40%;
+    }
+    #main-text{
+        font-size: 3rem;
+    }
+    #body-text{
+        font-size: 0.8rem;
+    }
+    
+}
+
+@media screen and (max-width: 300px) { /*Maximum screen width is 300px*/
+    .img-responsive{
+        width: 45%;
+    }
+    #main-text{
+        font-size: 2rem;
+    }
+    #sub-text{
+        font-size: 0.7rem;
+    }
+    
+}
